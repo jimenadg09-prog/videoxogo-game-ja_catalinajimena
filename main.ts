@@ -1,3 +1,6 @@
+info.onScore(100, function () {
+	
+})
 music.play(music.stringPlayable("- - - - - - - - ", 120), music.PlaybackMode.UntilDone)
 scene.setBackgroundImage(img`
     4444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444
@@ -123,6 +126,9 @@ scene.setBackgroundImage(img`
     `)
 game.onUpdate(function () {
     music.play(music.melodyPlayable(music.baDing), music.PlaybackMode.UntilDone)
+    if (true) {
+    	
+    }
 })
 forever(function () {
 	

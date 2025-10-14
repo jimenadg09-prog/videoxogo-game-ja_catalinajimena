@@ -1,1 +1,18 @@
-<xml xmlns="https://developers.google.com/blockly/xml"><variables></variables></xml>
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable type="KIND_SpriteKind" id="azU(5dsvt1#A@x+nE=)K">Player</variable><variable type="KIND_SpriteKind" id="77vw,rvsY*~Ml+kUF3eu">Projectile</variable><variable type="KIND_SpriteKind" id="uzK1R`I8Yzw4*i#qk8|.">Food</variable><variable type="KIND_SpriteKind" id="-@Qk-dlUflU`Euw/]iO=">Enemy</variable></variables><block type="set_current_tilemap" id="+SqrY5sX-E-[2QKUNZhI" disabled-reasons="ORPHANED_BLOCK,MANUALLY_DISABLED" x="14" y="157"><value name="tilemap"><shadow type="tiles_tilemap_editor" id="YooqiVA:0SosTC97e5:L" disabled-reasons="MANUALLY_DISABLED"><field name="tilemap">tilemap`nivel1`</field><data>{"commentRefs":[],"fieldData":{"tilemap":"nivel1"}}</data></shadow></value></block><block type="spritescreatenoset" id="H|otKxWg48`hT63424J^" disabled-reasons="ORPHANED_BLOCK,MANUALLY_DISABLED" x="50" y="280"><value name="img"><shadow type="screen_image_picker" id="=m-?C[*lDx-8M@WjuVA:" disabled-reasons="MANUALLY_DISABLED"><field name="img">img`
+. . . . . . f f f f . . . . . . 
+. . . . . f f 1 1 f f . . . . . 
+. . . . f f 1 1 1 1 f f . . . . 
+. . . f f 9 9 9 9 9 9 f f . . . 
+. . f f 9 1 1 1 1 1 1 9 f f . . 
+. . f 9 1 f f f f f f 1 9 f . . 
+. . f f f f e e e e f f f f . . 
+. f f e f b f 4 4 f b f e f f . 
+. f e e 4 1 f d d f 1 4 e e f . 
+. . f e e d d d d d d e e f . . 
+. . . f e e 4 4 4 4 e e f . . . 
+. . e 4 f 9 9 9 9 9 9 f 4 e . . 
+. . 4 d f 1 1 1 1 1 1 f d 4 . . 
+. . 4 4 f 4 4 5 5 4 4 f 4 4 . . 
+. . . . . f f f f f f . . . . . 
+. . . . . f f . . f f . . . . . 
+`</field><data>{"commentRefs":[],"fieldData":{"img":null}}</data></shadow></value><value name="kind"><shadow type="spritekind" id="W+w]EvPSXUb6dIwxM^f!" disabled-reasons="MANUALLY_DISABLED"><field name="MEMBER">Player</field></shadow></value></block></xml>

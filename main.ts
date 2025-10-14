@@ -124,3 +124,6 @@ scene.setBackgroundImage(img`
 game.onUpdate(function () {
 	
 })
+forever(function () {
+	
+})

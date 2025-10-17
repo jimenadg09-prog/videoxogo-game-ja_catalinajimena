@@ -19,5 +19,7 @@ game.onUpdate(function () {
         . . . . . f f f f f f . . . . . 
         . . . . . f f . . f f . . . . . 
         `, SpriteKind.Player)
-    controller.moveSprite(XoséXosefa, 100, 100)
+    controller.player1.moveSprite(XoséXosefa, 100, 100)
+    scene.cameraFollowSprite(XoséXosefa)
+    info.setScore(0)
 })

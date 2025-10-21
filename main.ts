@@ -27,6 +27,7 @@ XoséXosefa = sprites.create(img`
     . . . . . f f . . f f . . . . . 
     `, SpriteKind.Player)
 game.onUpdateInterval(1000, function () {
+    let mySprite: Sprite = null
     let myEnemy: Sprite = null
     planta = sprites.create(img`
         . . . . . . . . . . . . . . . . 
@@ -46,5 +47,5 @@ game.onUpdateInterval(1000, function () {
         . . . . . . . . . . . . . . . . 
         . . . . . . . . . . . . . . . . 
         `, SpriteKind.Enemy)
-    myEnemy.follow(XoséXosefa, 100)
+    myEnemy.follow(mySprite, 100)
 })

@@ -1,5 +1,6 @@
-info.onCountdownEnd(function () {
-	
+scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.chestClosed, function (sprite, location) {
+    info.changeScoreBy(1)
+    tiles.setTileAt(location, sprites.castle.tilePath5)
 })
 let planta: Sprite = null
 let XoséXosefa: Sprite = null
@@ -7,7 +8,6 @@ tiles.setCurrentTilemap(tilemap`nivel 1`)
 controller.moveSprite(XoséXosefa, 100, 100)
 scene.cameraFollowSprite(XoséXosefa)
 info.setScore(0)
-info.startCountdown(10)
 XoséXosefa = sprites.create(img`
     . . . . . . f f f f . . . . . . 
     . . . . . f f 1 1 f f . . . . . 
@@ -27,7 +27,6 @@ XoséXosefa = sprites.create(img`
     . . . . . f f . . f f . . . . . 
     `, SpriteKind.Player)
 game.onUpdateInterval(1000, function () {
-    let mySprite: Sprite = null
     let myEnemy: Sprite = null
     planta = sprites.create(img`
         . . . . . . . . . . . . . . . . 
@@ -47,5 +46,5 @@ game.onUpdateInterval(1000, function () {
         . . . . . . . . . . . . . . . . 
         . . . . . . . . . . . . . . . . 
         `, SpriteKind.Enemy)
-    myEnemy.follow(mySprite, 100)
+    myEnemy.follow(XoséXosefa, 100)
 })
